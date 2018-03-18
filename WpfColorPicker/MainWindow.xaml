@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfColorPicker"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Color Picker" Width="600" Height="185" Visibility="Visible" MouseDown="OnMouseDown" ResizeMode="NoResize" Background="#7FFFFFFF">
+    <Grid Margin="0,0,2,4">
+        <Image x:Name="image_board" HorizontalAlignment="Left" Height="130" Margin="10,10,0,0" VerticalAlignment="Top" Width="130" Initialized="Board_Init" Stretch="None"/>
+        <Image x:Name="image_bar" HorizontalAlignment="Left" Height="130" Margin="150,10,0,0" VerticalAlignment="Top" Width="16" Initialized="Bar_Init" Stretch="None" MouseDown="BarMouseDown" MouseMove="BarMouseMove" MouseUp="BarMouseUp"/>
     </Grid>
 </Window>
